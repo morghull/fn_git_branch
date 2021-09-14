@@ -1,3 +1,8 @@
 *{
    box-sizing: border-box;
 }
+.body{
+   background-color: darkcyan;
+   color: white;
+   padding: 1em;
+}
