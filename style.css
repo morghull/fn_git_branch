@@ -1,18 +1,36 @@
 * {
   box-sizing: border-box;
 }
+form {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  max-width: 300px;
+  min-height: 300px;
+  margin: auto;
+}
+input:focus {
+  outline-color: darkcyan;
+}
+.flex {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.btn-block{
+  text-align: center;
+}
 .header {
   background-color: black;
   font-size: 16px;
   color: white;
 }
-.body{
-   background-color: darkcyan;
-   color: white;
-   padding: 1em;
+.body {
+  background-color: darkcyan;
+  color: white;
+  padding: 1em;
 }
-.footer{
-   background-color: tomato;
-   color: white;
-   padding: 0.5em;
+.footer {
+  background-color: tomato;
+  color: white;
+  padding: 0.5em;
 }
