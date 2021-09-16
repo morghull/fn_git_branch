@@ -8,111 +8,63 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <form action="/test" method="GET" enctype="multipart/form-data">
-      <input type="color" name="" id="" />
-      <input type="date" name="" id="" />
-      <input type="datetime" name="" id="" />
-      <input type="datetime-local" name="" id="" />
-      <input type="month" name="" id="" />
-      <input type="time" name="" id="" />
-      <input type="week" name="" id="" />
-
-      <input type="file" name="" id="" />
-
-      <input type="number" name="" id="" />
-      <input type="range" name="" id="" />
-
-      <input type="search" name="" id="" />
-      <fieldset>
-        <legend>user name</legend>
-        <label for="fname" class="flex">
-          <span>First Name</span>
+    <div class="wrappper">
+      <section class="reg-section">
+        <div class="header-wrapper">
+          <h1 class="section-header overflow">Register</h1>
+        </div>
+        <p class="section-help">
+          Create your account. It's free and only takes a minute
+        </p>
+        <form
+          action="/test"
+          method="GET"
+          enctype="multipart/form-data"
+          class="reg-form"
+        >
+          <div class="user-name">
+            <input
+              type="text"
+              name="firstName"
+              placeholder="First Name"
+              class="input-text"
+            />
+            <input
+              type="text"
+              name="lastName"
+              placeholder="Last Name"
+              class="input-text"
+            />
+          </div>
           <input
-            autofocus
             type="text"
-            placeholder="First Name"
-            name="firstName"
-            required
+            name="email"
+            placeholder="Email"
+            class="input-text"
           />
-        </label>
-        <label for="lname" class="flex">
-          <span>Last Name</span>
           <input
-            type="email"
-            placeholder="Last Name"
-            name="lastName"
-            required
-            autocomplete="name"
+            type="password"
+            name="pass"
+            placeholder="Password"
+            class="input-text"
           />
-        </label>
-      </fieldset>
-      <fieldset>
-        <legend>personal data</legend>
-        <label for="lname" class="flex">
-          <span>Email</span>
-          <input type="text" placeholder="Email" name="lastName" required />
-        </label>
-        <label for="pass" class="flex">
-          <span>Password</span>
-          <input type="password" name="" id="pass" />
-        </label>
-
-        <label class="flex">
-          <span>Male</span>
-          <input value="male" type="radio" name="state" required checked />
-        </label>
-        <label class="flex">
-          <span>Female</span>
-          <input value="female" type="radio" name="state" />
-        </label>
-        <label class="flex">
-          <span>Are you adult?</span>
-          <input value="female" type="checkbox" name="chk1" />
-        </label>
-      </fieldset>
-      <fieldset>
-        <legend>Optional data</legend>
-        <label class="flex">
-          <span>HTML</span>
-          <input value="html" type="checkbox" name="course" />
-        </label>
-        <label class="flex">
-          <span>CSS</span>
-          <input value="css" type="checkbox" name="course" />
-        </label>
-        <label class="flex">
-          <span>JS</span>
-          <input value="js" type="checkbox" name="course" />
-        </label>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-
-        <select name="town">
-          <optgroup label="grp1">
-            <option value="1" selected>Zp</option>
-            <option value="2">Kv</option>
-            <option value="3">Dn</option>
-          </optgroup>
-          <optgroup label="grp1">
-            <option value="1">Zp</option>
-            <option value="2">Kv</option>
-            <option value="3">Dn</option>
-          </optgroup>
-        </select>
-      </fieldset>
-      <label>
-        <span>Town</span>
-        <datalist id="townList">
-          <option value="1"></option>
-          <option value="2"></option>
-          <option value="3"></option>
-          <option value="dnipro"></option>
-        </datalist>
-        <input type="text" placeholder="Town" name="town" list="townList" />
-      </label>
-      <div class="btn-block">
-        <input type="reset" value="reset" />
-        <input type="submit" value="submit" />
-      </div>
-    </form>
+          <input
+            type="password"
+            name="passConfirm"
+            placeholder="Confirm Password"
+            class="input-text"
+          />
+          <label class="terms-of-use">
+            <input type="checkbox" name="tersOfUse" class="input-check" />
+            <span
+              >I accept the <a href="">Terms of Use</a> &
+              <a href="">Privacy Policy</a></span
+            >
+          </label>
+          <input type="submit" value="Register Now" />
+        </form>
+      </section>
+      <p class="already-reg">Already have an account? <a href="">Sign in</a></p>
+    </div>
   </body>
 </html>
